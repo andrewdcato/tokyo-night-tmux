@@ -3,6 +3,31 @@
 SELECTED_THEME="$(tmux show-option -gv @tokyo-night-tmux_theme)"
 
 case $SELECTED_THEME in
+"dracula")
+  declare -A THEME=(
+    ["background"]="#282a36"
+    ["foreground"]="#f8f8f2"
+
+    ["black"]="#191a21"
+    ["blue"]="#8Be9fd" # dracula doesn't have blue, so just dupe cyan
+    ["cyan"]="#8Be9fd"
+    ["green"]="#50fa7b"
+    ["magenta"]="#bd93f9"
+    ["red"]="#ff5555"
+    ["white"]="#abb2bf"
+    ["yellow"]="#f1fa8c"
+
+    ["bblack"]="#44475A"
+    ["bblue"]="#D6ACFF"
+    ["bcyan"]="#A4FFFF"
+    ["bgreen"]="#69FF94"
+    ["bmagenta"]="#FF92DF"
+    ["bred"]="#FF6E6E"
+    ["bwhite"]="#FFFFFF"
+    ["byellow"]="#FFFFA5"
+  )
+  ;;
+
 "nord")
   declare -A THEME=(
     ["background"]="#232831"
