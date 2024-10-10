@@ -127,9 +127,9 @@ case $SELECTED_THEME in
   ;;
 esac
 
-THEME['ghgreen']="#3fb950"
-THEME['ghmagenta']="#A371F7"
-THEME['ghred']="#d73a4a"
-THEME['ghyellow']="#d29922"
+THEME['ghgreen']="#50fa7b"
+THEME['ghmagenta']="#bd93f9"
+THEME['ghred']="#ff5555"
+THEME['ghyellow']="#f1fa8c"
 
 RESET="#[fg=${THEME[foreground]},bg=${THEME[background]},nobold,noitalics,nounderscore,nodim]"
