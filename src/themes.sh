@@ -28,6 +28,56 @@ case $SELECTED_THEME in
   )
   ;;
 
+"catppucin-macchiato")
+  declare -A THEME=(
+    ["background"]="#24273a" # base
+    ["foreground"]="#cad3f5" # text
+
+    ["black"]="#494d64" # surface1
+    ["red"]="#ed8796"
+    ["green"]="#a6da95"
+    ["yellow"]="#eed49f"
+    ["blue"]="#8aadf4"
+    ["magenta"]="#f5bde6" # pink
+    ["cyan"]="#91d7e3" # sky
+    ["white"]="#a5adcb" # subtext0
+
+    ["bblack"]="#5b6078" # surface2
+    ["bred"]="#ee99a0" # maroon
+    ["bgreen"]="#8bd5ca" # teal
+    ["byellow"]="#f5a97f" # peach
+    ["bblue"]="#7dc4e4" # sapphire
+    ["bmagenta"]="#f0c6c6" #flamingo
+    ["bcyan"]="#8bd5ca" # teal
+    ["bwhite"]="#b8c0e0" # subtext1
+  )
+  ;;
+
+"catppucin-mocha")
+  declare -A THEME=(
+    ["background"]="#1e1e2e" # base
+    ["foreground"]="#cdd6f4" # text
+
+    ["black"]="#45475a" # surface1
+    ["red"]="#f38ba8"
+    ["green"]="#a6e3a1"
+    ["yellow"]="#f9e2af"
+    ["blue"]="#89b4fa"
+    ["magenta"]="#f5c2e7" # pink
+    ["cyan"]="#89dceb" # sky
+    ["white"]="#a6adc8" # subtext0
+
+    ["bblack"]="#585b70" # surface2
+    ["bred"]="#eba0ac" # maroon
+    ["bgreen"]="#94e2d5" # teal
+    ["byellow"]="#fab387" # peach
+    ["bblue"]="#74c7ec" # sapphire
+    ["bmagenta"]="#f2cdcd" #flamingo
+    ["bcyan"]="#94e2d5" # teal
+    ["bwhite"]="#FFFFFF" # subtext1
+  )
+  ;;
+
 "nord")
   declare -A THEME=(
     ["background"]="#232831"
