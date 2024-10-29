@@ -75,6 +75,11 @@ case $SELECTED_THEME in
     ["bmagenta"]="#f2cdcd" #flamingo
     ["bcyan"]="#94e2d5" # teal
     ["bwhite"]="#FFFFFF" # subtext1
+
+    ['ghgreen']="#a6e3a1"
+    ['ghmagenta']="#f5c2e7"
+    ['ghred']="#eba0ac"
+    ['ghyellow']="#fab387"
   )
   ;;
 
@@ -176,10 +181,5 @@ case $SELECTED_THEME in
   )
   ;;
 esac
-
-THEME['ghgreen']="#50fa7b"
-THEME['ghmagenta']="#bd93f9"
-THEME['ghred']="#ff5555"
-THEME['ghyellow']="#f1fa8c"
 
 RESET="#[fg=${THEME[foreground]},bg=${THEME[background]},nobold,noitalics,nounderscore,nodim]"
