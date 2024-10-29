@@ -2,7 +2,7 @@
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # title      Tokyo Night                                              +
 # version    1.0.0                                                    +
-# repository https://github.com/logico-dev/tokyo-night-tmux           +
+# repository https://github.com/logico-dev/cato-theme-tmux           +
 # author     Lógico                                                   +
 # email      hi@logico.com.ar                                         +
 # +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -34,9 +34,9 @@ default_window_id_style="digital"
 default_pane_id_style="hsquare"
 default_zoom_id_style="dsquare"
 
-window_id_style="$(echo "$TMUX_VARS" | grep '@tokyo-night-tmux_window_id_style' | cut -d" " -f2)"
-pane_id_style="$(echo "$TMUX_VARS" | grep '@tokyo-night-tmux_pane_id_style' | cut -d" " -f2)"
-zoom_id_style="$(echo "$TMUX_VARS" | grep '@tokyo-night-tmux_zoom_id_style' | cut -d" " -f2)"
+window_id_style="$(echo "$TMUX_VARS" | grep '@cato-theme-tmux_window_id_style' | cut -d" " -f2)"
+pane_id_style="$(echo "$TMUX_VARS" | grep '@cato-theme-tmux_pane_id_style' | cut -d" " -f2)"
+zoom_id_style="$(echo "$TMUX_VARS" | grep '@cato-theme-tmux_zoom_id_style' | cut -d" " -f2)"
 window_id_style="${window_id_style:-$default_window_id_style}"
 pane_id_style="${pane_id_style:-$default_pane_id_style}"
 zoom_id_style="${zoom_id_style:-$default_zoom_id_style}"

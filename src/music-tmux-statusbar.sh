@@ -5,7 +5,7 @@ ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/.."
 . "${ROOT_DIR}/lib/coreutils-compat.sh"
 
 # Check the global value
-SHOW_MUSIC=$(tmux show-option -gv @tokyo-night-tmux_show_music)
+SHOW_MUSIC=$(tmux show-option -gv @cato-theme-tmux_show_music)
 
 if [ "$SHOW_MUSIC" != "1" ]; then
   exit 0

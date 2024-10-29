@@ -5,7 +5,7 @@
 #<------------------------------------------------------------------------------------------>
 
 # Check if enabled
-ENABLED=$(tmux show-option -gv @tokyo-night-tmux_show_netspeed 2>/dev/null)
+ENABLED=$(tmux show-option -gv @cato-theme-tmux_show_netspeed 2>/dev/null)
 [[ ${ENABLED} -ne 1 ]] && exit 0
 
 # Imports
@@ -14,11 +14,11 @@ source "$ROOT_DIR/src/themes.sh"
 source "$ROOT_DIR/lib/netspeed.sh"
 
 # Get network interface
-INTERFACE=$(tmux show-option -gv @tokyo-night-tmux_netspeed_iface 2>/dev/null)
+INTERFACE=$(tmux show-option -gv @cato-theme-tmux_netspeed_iface 2>/dev/null)
 # Show IP address
-SHOW_IP=$(tmux show-option -gv @tokyo-night-tmux_netspeed_showip 2>/dev/null)
+SHOW_IP=$(tmux show-option -gv @cato-theme-tmux_netspeed_showip 2>/dev/null)
 # Time between refresh
-TIME_DIFF=$(tmux show-option -gv @tokyo-night-tmux_netspeed_refresh 2>/dev/null)
+TIME_DIFF=$(tmux show-option -gv @cato-theme-tmux_netspeed_refresh 2>/dev/null)
 TIME_DIFF=${TIME_DIFF:-1}
 
 # Icons
@@ -36,7 +36,7 @@ if [[ -z $INTERFACE ]]; then
   INTERFACE=$(find_interface)
   [[ -z $INTERFACE ]] && exit 1
   # Update tmux option for this session
-  tmux set-option -g @tokyo-night-tmux_netspeed_iface "$INTERFACE"
+  tmux set-option -g @cato-theme-tmux_netspeed_iface "$INTERFACE"
 fi
 
 # Echo network speed

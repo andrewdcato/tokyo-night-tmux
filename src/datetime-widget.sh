@@ -5,7 +5,7 @@ ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)/.."
 . "${ROOT_DIR}/lib/coreutils-compat.sh"
 
 # Grab global variable for showing datetime widget, only hide if explicitly disabled
-SHOW_DATETIME=$(tmux show-option -gv @tokyo-night-tmux_show_datetime 2>/dev/null)
+SHOW_DATETIME=$(tmux show-option -gv @cato-theme-tmux_show_datetime 2>/dev/null)
 if [[ $SHOW_DATETIME == "0" ]]; then
   exit 0
 fi
@@ -14,8 +14,8 @@ CURRENT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source $CURRENT_DIR/themes.sh
 
 # Assign values based on user config
-date_format=$(tmux show-option -gv @tokyo-night-tmux_date_format 2>/dev/null)
-time_format=$(tmux show-option -gv @tokyo-night-tmux_time_format 2>/dev/null)
+date_format=$(tmux show-option -gv @cato-theme-tmux_date_format 2>/dev/null)
+time_format=$(tmux show-option -gv @cato-theme-tmux_time_format 2>/dev/null)
 
 date_string=""
 time_string=""

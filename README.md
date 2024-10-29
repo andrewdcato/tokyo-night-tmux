@@ -1,10 +1,10 @@
 # Tokyo Night Tmux
 
-![example workflow](https://github.com/janoamaral/tokyo-night-tmux/actions/workflows/pre-commit.yml/badge.svg?branch=master)
+![example workflow](https://github.com/janoamaral/cato-theme-tmux/actions/workflows/pre-commit.yml/badge.svg?branch=master)
 
 A clean, dark Tmux theme that celebrates the lights of Downtown [Tokyo at night.](https://www.google.com/search?q=tokyo+night&newwindow=1&sxsrf=ACYBGNRiOGCstG_Xohb8CgG5UGwBRpMIQg:1571032079139&source=lnms&tbm=isch&sa=X&ved=0ahUKEwiayIfIhpvlAhUGmuAKHbfRDaIQ_AUIEigB&biw=1280&bih=666&dpr=2)
 The perfect companion for [tokyonight-vim](https://github.com/ghifarit53/tokyonight-vim)
-Adapted from the original, [Visual Studio Code theme](https://github.com/enkia/tokyo-night-vscode-theme).
+Adapted from the original, [Visual Studio Code theme](https://github.com/enkia/cato-theme-vscode-theme).
 The old version (deprecated) is still available in the `legacy` branch.
 
 <a href="https://www.buymeacoffee.com/jano" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
@@ -65,7 +65,7 @@ Check documentation for installing on other operating systems.
 In your `tmux.conf`:
 
 ```bash
-set -g @plugin "janoamaral/tokyo-night-tmux"
+set -g @plugin "janoamaral/cato-theme-tmux"
 ```
 
 ## Configuration
@@ -75,17 +75,17 @@ set -g @plugin "janoamaral/tokyo-night-tmux"
 Run these commands in your terminal:
 
 ```bash
-tmux set @tokyo-night-tmux_window_id_style digital
-tmux set @tokyo-night-tmux_pane_id_style hsquare
-tmux set @tokyo-night-tmux_zoom_id_style dsquare
+tmux set @cato-theme-tmux_window_id_style digital
+tmux set @cato-theme-tmux_pane_id_style hsquare
+tmux set @cato-theme-tmux_zoom_id_style dsquare
 ```
 
 Alternatively, add these lines to your  `.tmux.conf`:
 
 ```bash
-set -g @tokyo-night-tmux_window_id_style digital
-set -g @tokyo-night-tmux_pane_id_style hsquare
-set -g @tokyo-night-tmux_zoom_id_style dsquare
+set -g @cato-theme-tmux_window_id_style digital
+set -g @cato-theme-tmux_pane_id_style hsquare
+set -g @cato-theme-tmux_zoom_id_style dsquare
 ```
 
 ### Widgets
@@ -97,9 +97,9 @@ For widgets add following lines in you `.tmux.conf`
 This widget is enabled by default. To disable it:
 
 ```bash
-set -g @tokyo-night-tmux_show_datetime 0
-set -g @tokyo-night-tmux_date_format MYD
-set -g @tokyo-night-tmux_time_format 12H
+set -g @cato-theme-tmux_show_datetime 0
+set -g @cato-theme-tmux_date_format MYD
+set -g @cato-theme-tmux_time_format 12H
 ```
 
 ##### Available Options
@@ -114,32 +114,32 @@ set -g @tokyo-night-tmux_time_format 12H
 #### Now Playing widget
 
 ```bash
-set -g @tokyo-night-tmux_show_music 1
+set -g @cato-theme-tmux_show_music 1
 ```
 
 #### Netspeed widget
 ![Snap netspeed](snaps/netspeed.png)
 
 ```bash
-set -g @tokyo-night-tmux_show_netspeed 1
-set -g @tokyo-night-tmux_netspeed_iface "wlan0" # Detected via default route
-set -g @tokyo-night-tmux_netspeed_showip 1      # Display IPv4 address (default 0)
-set -g @tokyo-night-tmux_netspeed_refresh 1     # Update interval in seconds (default 1)
+set -g @cato-theme-tmux_show_netspeed 1
+set -g @cato-theme-tmux_netspeed_iface "wlan0" # Detected via default route
+set -g @cato-theme-tmux_netspeed_showip 1      # Display IPv4 address (default 0)
+set -g @cato-theme-tmux_netspeed_refresh 1     # Update interval in seconds (default 1)
 ```
 
 #### Path Widget
 
 ```bash
-set -g @tokyo-night-tmux_show_path 1
-set -g @tokyo-night-tmux_path_format relative # 'relative' or 'full'
+set -g @cato-theme-tmux_show_path 1
+set -g @cato-theme-tmux_path_format relative # 'relative' or 'full'
 ```
 
 #### Battery Widget
 
 ```bash
-set -g @tokyo-night-tmux_show_battery_widget 1
-set -g @tokyo-night-tmux_battery_name "BAT1"  # some linux distro have 'BAT0'
-set -g @tokyo-night-tmux_battery_low_threshold 21 # default
+set -g @cato-theme-tmux_show_battery_widget 1
+set -g @cato-theme-tmux_battery_name "BAT1"  # some linux distro have 'BAT0'
+set -g @cato-theme-tmux_battery_low_threshold 21 # default
 ```
 
 Set variable value `0` to disable the widget. Remember to restart `tmux` after
@@ -148,7 +148,7 @@ changing values.
 ## Styles
 
 - `none`: no style, default font
-- `digital`: 7 segment number (🯰...🯹) (needs [Unicode support](https://github.com/janoamaral/tokyo-night-tmux/issues/36#issuecomment-1907072080))
+- `digital`: 7 segment number (🯰...🯹) (needs [Unicode support](https://github.com/janoamaral/cato-theme-tmux/issues/36#issuecomment-1907072080))
 - `roman`: roman numbers (󱂈...󱂐) (needs nerdfont)
 - `fsquare`: filled square (󰎡...󰎼) (needs nerdfont)
 - `hsquare`: hollow square (󰎣...󰎾) (needs nerdfont)
@@ -184,16 +184,16 @@ so it's independent of terminal theme.
 
 ### Demo
 
-https://github.com/janoamaral/tokyo-night-tmux/assets/10008708/59ecd814-bc2b-47f2-82b1-ffdbfbc54fbf
+https://github.com/janoamaral/cato-theme-tmux/assets/10008708/59ecd814-bc2b-47f2-82b1-ffdbfbc54fbf
 
 ### Snapshots
 
-- Terminal: Kitty with [Tokyo Night Kitty Theme](https://github.com/davidmathers/tokyo-night-kitty-theme)
+- Terminal: Kitty with [Tokyo Night Kitty Theme](https://github.com/davidmathers/cato-theme-kitty-theme)
 - Font: [SFMono Nerd Font Ligaturized](https://github.com/shaunsingh/SFMono-Nerd-Font-Ligaturized)
 
 ![Snap 5](snaps/logico.png)
 
-Legacy tokyo-night
+Legacy cato-theme
 
 ![Snap 4](snaps/l01.png)
 

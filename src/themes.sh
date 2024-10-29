@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-SELECTED_THEME="$(tmux show-option -gv @tokyo-night-tmux_theme)"
+SELECTED_THEME="$(tmux show-option -gv @cato-theme-tmux_theme)"
 
 case $SELECTED_THEME in
 "dracula")
